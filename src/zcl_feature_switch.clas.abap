@@ -23,7 +23,6 @@ CLASS ZCL_FEATURE_SWITCH IMPLEMENTATION.
 
 
   METHOD check_switch.
-    DATA: lt_values TYPE TABLE OF us335.
 
     SELECT SINGLE * FROM zfeature INTO @DATA(ls_feature) WHERE feature = @iv_feature.
 
